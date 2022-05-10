@@ -95,17 +95,35 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         // Adding a context of SENSOR_SERVICE aas Sensor Manager
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
 
-        var tvView = findViewById<TextView>(R.id.tvView)
+        var goal = findViewById<TextView>(R.id.goal)
         val intent = intent
         val lName = intent.getStringExtra("lname")
 
 
+
+
+
         if (lName !== null){
             newvar = lName.toString().toFloat()
-            tvView!!.text = "$newvar"
+            goal!!.text = String.format("%.0f", newvar)
         }
 
         resetSteps()
+
+
+//        val sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+//        val stepsforach = sharedPreferences.getFloat("total", 0f)
+//
+//
+//        if ((stepsforach == 1.toFloat()) || (stepsforach == 50.toFloat()) || (stepsforach == 100.toFloat()) || (stepsforach == 250.toFloat()) ||
+//            (stepsforach == 500.toFloat()) || (stepsforach == 666.toFloat()) || (stepsforach == 777.toFloat()) || (stepsforach == 1121.toFloat()) ||
+//            (stepsforach == 3333.toFloat()) || (stepsforach == 4444.toFloat()) || (stepsforach == 5555.toFloat()) || (stepsforach == 6000.toFloat()) ||
+//            (stepsforach == 7000.toFloat()) || (stepsforach == 8000.toFloat()) || (stepsforach == 8848.toFloat()) || (stepsforach == 10000.toFloat()) ||
+//            (stepsforach == 15000.toFloat()) || (stepsforach == 20000.toFloat()) || (stepsforach == 25000.toFloat()) || (stepsforach == 30303.toFloat()) ||
+//            (stepsforach == 40000.toFloat()) || (stepsforach == 42000.toFloat()) || (stepsforach == 100000.toFloat()) || (stepsforach == 155571.toFloat()) ||
+//            (stepsforach == 13065714.toFloat()) || (stepsforach == 57250000.toFloat()) || (stepsforach == 549238571.toFloat())){
+//            Toast.makeText(this, "Вы получили новое достижение!", Toast.LENGTH_SHORT).show()
+//        }
 
 
     }
@@ -140,7 +158,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
         if (stepSensor == null) {
             // This will give a toast message to the user if there is no sensor in the device
-            Toast.makeText(this, "No sensor detected on this device", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Необходимый сенсор не найден на устройстве", Toast.LENGTH_SHORT).show()
         } else {
             // Rate suitable for the user interface
             sensorManager?.registerListener(this, stepSensor, SensorManager.SENSOR_DELAY_UI)
@@ -151,14 +169,12 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
         // Calling the TextView that we made in activity_main.xml
         // by the id given to that TextView
-        var tv_stepsTaken = findViewById<TextView>(R.id.tv_stepsTaken)
+        var steps = findViewById<TextView>(R.id.steps)
 
 
-
-        //var tv_stepsPre = findViewById<TextView>(R.id.tv_stepsPre)
+        //var steps = findViewById<TextView>(R.id.steps)
 
         if (running) {
-
 
 
             totalSteps = event!!.values[0]
@@ -170,10 +186,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
 
             // It will show the current steps to the user
-            tv_stepsTaken.text = ("$currentSteps")
-
-
-
+            steps.text = ("$currentSteps")
 
 
             val circularProgressBar = findViewById<CircularProgressBar>(R.id.circularProgressBar)
@@ -186,10 +199,10 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                 progressMax = newvar
 
                 // Set ProgressBar Color
-                progressBarColor = Color.GREEN
+                progressBarColor = Color.BLUE
 
                 // Set Width
-                progressBarWidth = 7f // in DP
+                progressBarWidth = 9f // in DP
                 backgroundProgressBarWidth = 3f // in DP
             }
 
@@ -215,36 +228,33 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
         if (!currentDayDate.equals(currentDate.toString(), true)) {
             saveData(currentDayDate, totalSteps - startDayStepCount)
-            Toast.makeText(this, "За " + currentDayDate + " число было пройдено Шагов =  " + (totalSteps - startDayStepCount - 10), Toast.LENGTH_SHORT).show();
-            //val dalIntent = Intent(this, MainActivity2::class.java)
-            //dalIntent.putExtra(MainActivity2.KEY, daily)
-            //startActivity(dalIntent)
+
 
             currentDayDate = currentDate.toString()
             saveData("currentDayDate", currentDayDate)
 
             startDayStepCount = totalSteps
             saveData("startDayStepCount", startDayStepCount)
-        }
-        else {
+        } else {
             saveData("currentDayDate", currentDayDate)
             saveData("startDayStepCount", startDayStepCount)
         }
-       //all
+        //all
+
+
         saveData("total", totalSteps)
-        Toast.makeText(this,  currentDayDate + "; Шагов за сегодня = " + (totalSteps - startDayStepCount), Toast.LENGTH_SHORT).show();
     }
 
     fun resetSteps() {
-        var tv_stepsTaken = findViewById<TextView>(R.id.tv_stepsTaken)
-        tv_stepsTaken.setOnClickListener {
+        var steps = findViewById<TextView>(R.id.steps)
+        steps.setOnClickListener {
             // This will give a toast message if the user want to reset the steps
             Toast.makeText(this, "Долгое нажатия для сброса шагов", Toast.LENGTH_SHORT).show()
 
 
         }
 
-        tv_stepsTaken.setOnLongClickListener {
+        steps.setOnLongClickListener {
 
             val circularProgressBar = findViewById<CircularProgressBar>(R.id.circularProgressBar)
 
@@ -257,10 +267,10 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                 //progressMax = 100f
 
                 // Set ProgressBar Color
-                progressBarColor = Color.GREEN
+                progressBarColor = Color.BLUE
 
                 // Set Width
-                progressBarWidth = 7f // in DP
+                progressBarWidth = 9f // in DP
                 backgroundProgressBarWidth = 3f // in DP
             }
 
@@ -269,7 +279,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
             // When the user will click long tap on the screen,
             // the steps will be reset to 0
-            tv_stepsTaken.text = 0.toString()
+            steps.text = 0.toString()
 
             // This will save the data
             saveData("key1", previousTotalSteps)
