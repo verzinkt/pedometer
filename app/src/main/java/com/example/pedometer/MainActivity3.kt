@@ -3,13 +3,9 @@ package com.example.pedometer
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.Menu
+
 import android.widget.TextView
-import android.widget.Toast
-import java.util.*
-import com.google.android.material.snackbar.Snackbar;
-import android.view.View;
+
 import android.widget.ImageView
 
 
@@ -275,7 +271,7 @@ class MainActivity3 : AppCompatActivity() {
 
 
 
-        getSupportActionBar()?.setTitle("Pedometer")
+        getSupportActionBar()?.setTitle("Шагомер")
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
 
 

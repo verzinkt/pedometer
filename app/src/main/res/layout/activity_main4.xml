@@ -9,11 +9,12 @@
 
     <TextView
         android:id="@+id/textViewLabel"
-        android:layout_width="135dp"
-        android:layout_height="39dp"
+        android:layout_width="182dp"
+        android:layout_height="40dp"
         android:text="Настройки"
-        android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textColor="#07168a"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,16 +36,16 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/etLName"
+        android:id="@+id/evarInte"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.318"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/black"/>
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnSubmit"
@@ -52,12 +53,14 @@
         android:layout_height="46dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="28dp"
-        android:backgroundTint="#1170d9"
+        android:background="#1170d9"
         android:text="Отправить"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etLName"
+        app:layout_constraintTop_toBottomOf="@+id/evarInte"
+
         tools:ignore="MissingConstraints,OnClick" />
 
     <TextView
@@ -77,11 +80,13 @@
         android:layout_width="224dp"
         android:layout_height="46dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#1170d9"
+        android:layout_marginTop="8dp"
+        android:background="#1170d9"
         android:onClick="allSettings"
         android:text="Перейти"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="MissingConstraints,OnClick" />
@@ -102,12 +107,12 @@
         android:id="@+id/textView4"
         android:layout_width="329dp"
         android:layout_height="73dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
         android:text="Об авторе: \n\nСамохин Дмитрий 181-723"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/black"/>
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

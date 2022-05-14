@@ -20,7 +20,8 @@
         <entry key="..\:/SECONDKOTLIN/app/src/main/res/layout/activity_main2.xml" value="0.22" />
         <entry key="..\:/SECONDKOTLIN/app/src/main/res/layout/activity_main3.xml" value="0.2755208333333333" />
         <entry key="..\:/SECONDKOTLIN/app/src/main/res/layout/activity_two.xml" value="0.36666666666666664" />
-        <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24791666666666667" />
+        <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.5" />
+        <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable-v24/ic_ruuun.xml" value="0.3769230769230769" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/btn.xml" value="0.18020833333333333" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/ic_achievement.xml" value="0.2703125" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/ic_animal.xml" value="0.2703125" />
@@ -29,11 +30,13 @@
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/ic_baseline_directions_run_24.xml" value="0.18020833333333333" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18020833333333333" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/ic_running.xml" value="0.24791666666666667" />
+        <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/ic_send.xml" value="0.190625" />
+        <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/ic_settings.xml" value="0.190625" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/ic_stats.xml" value="0.2703125" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/drawable/ic_unlock.xml" value="0.2703125" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/layout/activity_main2.xml" value="0.264" />
-        <entry key="..\:/pedometer1/pedometer/app/src/main/res/layout/activity_main3.xml" value="0.2584745762711864" />
+        <entry key="..\:/pedometer1/pedometer/app/src/main/res/layout/activity_main3.xml" value="0.17753047164811872" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/layout/activity_main4.xml" value="0.264" />
         <entry key="..\:/pedometer1/pedometer/app/src/main/res/menu/nav_menu.xml" value="0.23177083333333334" />
       </map>

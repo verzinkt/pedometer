@@ -1,29 +1,25 @@
 package com.example.pedometer
 
-import android.app.ActionBar
-import android.content.Context
-import android.content.Intent
+
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
+
 import android.widget.TextView
-import android.widget.Toast
+
 import androidx.annotation.RequiresApi
 import java.lang.String
-import java.text.SimpleDateFormat
+
 import java.time.LocalDateTime
-import java.time.Period
+
 import java.time.format.DateTimeFormatter
-import java.util.*
+
 
 
 class MainActivity2 : AppCompatActivity() {
 
 
-//    var daysteps1 = findViewById<TextView>(R.id.daysteps1)
+
 
 
 
@@ -53,11 +49,11 @@ class MainActivity2 : AppCompatActivity() {
             content = content + date + " кол-во шагов : " + String.format("%.0f", dayStat_i) + "\n" + "\n"
 
 
-//            daysteps1!!.text = dayStat_i.toString()
+
 
         }
 
-//        day1!!.text = content
+
         day1.setText(content)
 
 
@@ -73,7 +69,7 @@ class MainActivity2 : AppCompatActivity() {
 
         takeStats()
 
-        getSupportActionBar()?.setTitle("Pedometer")
+        getSupportActionBar()?.setTitle("Шагомер")
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
 
 

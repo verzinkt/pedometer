@@ -20,11 +20,13 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="16dp"
             android:text="Достижения"
-            android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textColor="#07168a"
+            android:textSize="34sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
@@ -272,7 +274,7 @@
             android:id="@+id/name5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="НОВИЧЕК"
+            android:text="НОВИЧОК"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -1683,7 +1685,8 @@
             app:layout_constraintHorizontal_bias="0.322"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="2700dp"/>
+            android:layout_marginTop="2700dp"
+            />
 
         <TextView
             android:id="@+id/desc27"
@@ -1694,7 +1697,9 @@
             app:layout_constraintHorizontal_bias="0.430"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="2750dp"/>
+            android:layout_marginTop="2750dp"
+
+            />
 
         <ImageView
             android:id="@+id/ava27"
@@ -1705,7 +1710,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ic_question"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="2700dp"/>
+            android:layout_marginTop="2700dp"
+            />
 
         <ImageView
             android:id="@+id/zamok27"
@@ -1716,7 +1722,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ic_lock"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="2700dp"/>
+            android:layout_marginTop="2700dp"
+
+            />
+        <TextView
+            android:id="@+id/desc28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.430"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="2800dp"
+
+            />
+
 
 
 

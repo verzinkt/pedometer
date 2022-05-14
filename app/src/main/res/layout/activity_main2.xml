@@ -12,12 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:textColor="#07168a"
+        android:textStyle="bold"
         android:text="Недельная статистика:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="28sp"
-        android:textColor="@color/black"/>
+        android:textSize="34sp" />
 
     <TextView
         android:id="@+id/day1"
