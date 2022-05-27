@@ -1,7 +1,9 @@
 package com.example.pedometer
 
+import android.Manifest
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Color
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -15,6 +17,8 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
 import java.text.SimpleDateFormat
 import java.util.*
@@ -56,7 +60,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     var newvar = 8000f
 
 
-
+    private val ACTIVITY_RECOGNITION = 100
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,6 +68,19 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val list = listOf<String>(
+            Manifest.permission.ACTIVITY_RECOGNITION
+        )
+
+
+
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACTIVITY_RECOGNITION) != PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(this, "У приложения нет разрешения на физическую активность", Toast.LENGTH_SHORT).show()
+            ActivityCompat.requestPermissions(this, list.toTypedArray(), ACTIVITY_RECOGNITION);
+        }
+
+
 
 
         loadData()
@@ -189,7 +206,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     fun resetSteps() {
         var steps = findViewById<TextView>(R.id.steps)
         steps.setOnClickListener {
-            Toast.makeText(this, "Долгое нажатия для сброса статистики", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Внимание! Долгое нажатия для сброса статистики", Toast.LENGTH_SHORT).show()
         }
 
         steps.setOnLongClickListener {
