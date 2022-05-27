@@ -59,6 +59,8 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -71,7 +73,8 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         var goal = findViewById<TextView>(R.id.goal)
         val intent = intent
         val varInte = intent.getStringExtra("varInte")
-
+//        totalS = 0f
+//        prTotal = 0f
 
 
 
@@ -118,6 +121,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
             sensorManager?.registerListener(this, stepSensor, SensorManager.SENSOR_DELAY_UI)
         }
     }
+
 
     override fun onSensorChanged(event: SensorEvent?) {
 
@@ -184,10 +188,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     fun resetSteps() {
         var steps = findViewById<TextView>(R.id.steps)
         steps.setOnClickListener {
-
             Toast.makeText(this, "Долгое нажатия для сброса шагов", Toast.LENGTH_SHORT).show()
-
-
         }
 
         steps.setOnLongClickListener {

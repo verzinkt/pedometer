@@ -33,7 +33,4 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/black"/>
 
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

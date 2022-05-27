@@ -13,6 +13,7 @@ import android.widget.Button
 
 
 import android.app.Activity
+import android.content.Context
 import android.provider.Settings
 
 
@@ -49,5 +50,6 @@ class MainActivity4 : Activity(), OnClickListener {
     fun allSettings (view: View) {
         startActivity(Intent(Settings.ACTION_SETTINGS))
     }
+
 
 }
