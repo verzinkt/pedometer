@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     private var isrunning = false
     private var totalS = 0f
     private var prTotal = 0f
+    private var currentSteps = 0
 
     public final var SDF = SimpleDateFormat("dd/MM/yyyy")
     public var currentDayDate = SDF.format(Date()).toString();
@@ -135,7 +136,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
             totalS = event!!.values[0]
 
 
-            val currentSteps = totalS.toInt() - prTotal.toInt()
+            currentSteps = totalS.toInt() - prTotal.toInt()
 
 
             steps.text = ("$currentSteps")
@@ -182,13 +183,13 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
             saveData("startDayStepCount", startDayStepCount)
         }
 
-        saveData("total", totalS)
+        saveData("total", currentSteps.toFloat())
     }
 
     fun resetSteps() {
         var steps = findViewById<TextView>(R.id.steps)
         steps.setOnClickListener {
-            Toast.makeText(this, "Долгое нажатия для сброса шагов", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Долгое нажатия для сброса статистики", Toast.LENGTH_SHORT).show()
         }
 
         steps.setOnLongClickListener {
@@ -207,12 +208,9 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
 
             prTotal = totalS
-
-
             steps.text = 0.toString()
-
-
             saveData("firstKey", prTotal)
+            saveData("total", 0f)
 
             true
         }
