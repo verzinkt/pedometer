@@ -1,3 +1,102 @@
 <resources>
     <string name="app_name">Pedometer</string>
+    <string name="zero">0</string>
+    <string name="steps">шагов</string>
+    <string name="goal">Цель : </string>
+    <string name="tenthousand">10000</string>
+    <string name="stat">Статистика</string>
+    <string name="achievement">Достижения</string>
+    <string name="week">Недельная статистика:</string>
+    <string name="sdf">00/00/0000 кол-во шагов : 0</string>
+
+    <string name="one">НАЧАЛО ПОЛОЖЕНО</string>
+    <string name="one_desc">Пройти шагов: 1</string>
+
+    <string name="two">УЛИТКА</string>
+    <string name="two_desc">Пройти шагов: 50</string>
+
+    <string name="three">ЛЕНИВЕЦ</string>
+    <string name="three_desc">Пройти шагов: 100</string>
+
+    <string name="four">ЧЕРЕПАХА</string>
+    <string name="four_desc">Пройти шагов: 250</string>
+
+    <string name="five">НОВИЧОК</string>
+    <string name="five_desc">Пройти шагов: 500</string>
+
+    <string name="six">ЗВЕРЬ</string>
+    <string name="six_desc">Пройти шагов: 666</string>
+
+    <string name="seven">СЧАСТЛИВЧИК</string>
+    <string name="seven_desc">Пройти шагов: 777</string>
+
+    <string name="eight">ТИМИРЯЗЕВСКИЙ ПАРК</string>
+    <string name="eight_desc">Пройти шагов: 1121</string>
+
+    <string name="nine">ТРОЕЧНИК</string>
+    <string name="nine_desc">Пройти шагов: 3333</string>
+
+    <string name="ten">ХОРОШИСТ</string>
+    <string name="ten_desc">Пройти шагов: 4444</string>
+
+
+    <string name="eleven">ОТЛИЧНИК</string>
+    <string name="eleven_desc">Пройти шагов: 5555</string>
+
+    <string name="twelve">ФИЗРУК</string>
+    <string name="twelve_desc">Пройти шагов: 6000</string>
+
+    <string name="thirteen">СПОРТСМЕН</string>
+    <string name="thirteen_desc">Пройти шагов: 7000</string>
+
+    <string name="fourteen">ЗДОРОВЯК</string>
+    <string name="fourteen_desc">Пройти шагов: 8000</string>
+
+    <string name="fiveteen">ПОКОРЯЕМ ЭВЕРЕСТ</string>
+    <string name="fiveteen_desc">Пройти шагов: 8848</string>
+
+    <string name="sixteen">АТЛЕТ</string>
+    <string name="sixteen_desc">Пройти шагов: 10000</string>
+
+    <string name="seventeen">ПРОФИ</string>
+    <string name="seventeen_desc">Пройти шагов: 15000</string>
+
+    <string name="eightteen">МАСТЕР СПОРТА</string>
+    <string name="eightteen_desc">Пройти шагов: 20000</string>
+
+    <string name="nineteen">МСМК</string>
+    <string name="nineteen_desc">Пройти шагов: 25000</string>
+
+    <string name="twenty">УСЭЙН БОЛТ</string>
+    <string name="twenty_desc">Пройти шагов: 30303</string>
+
+    <string name="twentyone">СОРОКОНОЖКА</string>
+    <string name="twentyone_desc">Пройти шагов: 40000</string>
+
+    <string name="twentytwo">МАРАФОНЕЦ</string>
+    <string name="twentytwo_desc">Пройти шагов: 42000</string>
+
+    <string name="twentythree">ФЛЕШ</string>
+    <string name="twentythree_desc">Пройти шагов: 100000</string>
+
+    <string name="twentyfour">МКАД</string>
+    <string name="twentyfour_desc">Пройти шагов: 155571</string>
+
+    <string name="twentyfive">МОСКВА - ВЛАДИВОСТОК</string>
+    <string name="twentyfive_desc">Пройти шагов: 13065714</string>
+
+    <string name="twentysix">ВОКРУГ ЭКВАТОРА</string>
+    <string name="twentysix_desc">Пройти шагов: 57250000</string>
+
+    <string name="twentyseven">ДО ЛУНЫ</string>
+    <string name="twentyseven_desc">Пройти шагов: 549238571</string>
+
+    <string name="settings">Настройки</string>
+    <string name="inputgoal">Введите цель вашей активности:</string>
+    <string name="send">Отправить</string>
+    <string name="allsettings">Общие настройки приложения:</string>
+    <string name="go">Перейти</string>
+    <string name="version">Версия: 1.0</string>
+    <string name="about">Об авторе: \n\nСамохин Дмитрий 181–723</string>
+
 </resources>
