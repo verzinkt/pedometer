@@ -79,38 +79,3 @@ class MainActivity2 : AppCompatActivity() {
 
 
 }
-
-
-//package com.example.pedometer
-//
-//
-//import android.app.Activity
-//import android.os.Bundle
-//import android.view.View
-//import android.widget.LinearLayout
-//import com.example.pedometer.R
-//import com.jjoe64.graphview.BarGraphView
-//import com.jjoe64.graphview.GraphView
-//import com.jjoe64.graphview.GraphViewSeries
-//import com.jjoe64.graphview.GraphView.GraphViewData
-//import com.jjoe64.graphview.LineGraphView
-//
-//class MainActivity2 : Activity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main2)
-//
-//        // Линейный график
-//        val exampleSeries = GraphViewSeries(
-//            arrayOf<GraphViewData>(
-//                GraphViewData(1, 3.0),
-//                GraphViewData(2, 1.5), GraphViewData(3, 2.5),
-//                GraphViewData(4, 1.0), GraphViewData(5, 1.3)
-//            )
-//        )
-//        val graphView: GraphView = LineGraphView(this, "График каких-то данных")
-//        graphView.addSeries(exampleSeries)
-//        val layout = findViewById<View>(R.id.layout) as LinearLayout
-//        layout.addView(graphView)
-//    }
-//}

@@ -13,10 +13,8 @@ import android.widget.Button
 
 
 import android.app.Activity
-import android.content.Context
+import android.net.Uri
 import android.provider.Settings
-
-
 
 
 class MainActivity4 : Activity(), OnClickListener {
@@ -29,12 +27,15 @@ class MainActivity4 : Activity(), OnClickListener {
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main4)
         evarInte = findViewById<View>(R.id.evarInte) as EditText
         btnSubmit = findViewById<View>(R.id.btnSubmit) as Button
         btnSubmit!!.setOnClickListener(this)
 
     }
+
+
 
 
 
@@ -48,7 +49,13 @@ class MainActivity4 : Activity(), OnClickListener {
 
 
     fun allSettings (view: View) {
-        startActivity(Intent(Settings.ACTION_SETTINGS))
+
+        startActivity(
+            Intent(
+                Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                Uri.parse("package:" + BuildConfig.APPLICATION_ID)
+            )
+        )
     }
 
 
