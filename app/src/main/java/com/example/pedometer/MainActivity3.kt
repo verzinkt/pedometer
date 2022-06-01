@@ -271,7 +271,7 @@ class MainActivity3 : AppCompatActivity() {
 
 
 
-        getSupportActionBar()?.setTitle("Шагомер")
+        getSupportActionBar()?.setTitle("RunByRun")
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
 
 

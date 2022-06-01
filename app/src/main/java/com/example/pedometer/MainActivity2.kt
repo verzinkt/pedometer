@@ -69,7 +69,7 @@ class MainActivity2 : AppCompatActivity() {
 
         takeStats()
 
-        getSupportActionBar()?.setTitle("Шагомер")
+        getSupportActionBar()?.setTitle("RunByRun")
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
 
 

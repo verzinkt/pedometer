@@ -8,22 +8,22 @@
         android:allowBackup="true"
         android:theme="@style/Theme.pedometer"
         android:icon="@mipmap/ic_launcher"
-        android:label="Шагомер"
+        android:label="RunByRun"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
-            android:name=".MainActivity4"
+            android:name="com.example.pedometer.MainActivity4"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name="com.example.pedometer.MainActivity3"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName="com.example.pedometer.MainActivity"/>
         <activity
-            android:name=".MainActivity2"
+            android:name="com.example.pedometer.MainActivity2"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName="com.example.pedometer.MainActivity"/>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.pedometer.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,6 +31,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
